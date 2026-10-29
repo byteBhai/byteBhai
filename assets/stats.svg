@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360">
+  <defs><linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e1b4b"/><stop offset="1" stop-color="#2e1065"/></linearGradient></defs>
+  <style>
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .h { font-size: 22px; font-weight: 800; fill: #ffffff; }
+    .label { font-size: 16px; font-weight: 600; fill: #c4b5fd; }
+    .value { font-size: 38px; font-weight: 900; fill: #facc15; }
+    .note { font-size: 13px; fill: #a1a1aa; }
+    .foot { font-size: 14px; fill: #a1a1aa; }
+    .tile { opacity: 0; animation: up .6s ease-out forwards; }
+    @keyframes up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .live { animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+  </style>
+  <rect width="1000" height="360" rx="22" fill="url(#card)"/>
+  <text x="25.0" y="44" class="h">📊 GitHub dashboard</text>
+  <circle class="live" cx="905.0" cy="37" r="6" fill="#22c55e"/>
+  <text x="975.0" y="43" class="foot" text-anchor="end">LIVE</text>
+  <g class="tile" style="animation-delay:0.00s">
+    <rect x="25.0" y="70" width="300" height="110" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="47.0" y="114" font-size="28">👀</text>
+    <text x="91.0" y="112" class="label">Views</text>
+    <text x="91.0" y="158" class="value">0</text>
+    <text x="307.0" y="158" class="note" text-anchor="end">14 days</text></g><g class="tile" style="animation-delay:0.12s">
+    <rect x="350.0" y="70" width="300" height="110" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="372.0" y="114" font-size="28">🧑</text>
+    <text x="416.0" y="112" class="label">Unique visitors</text>
+    <text x="416.0" y="158" class="value">0</text>
+    <text x="632.0" y="158" class="note" text-anchor="end">14 days</text></g><g class="tile" style="animation-delay:0.24s">
+    <rect x="675.0" y="70" width="300" height="110" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="697.0" y="114" font-size="28">📥</text>
+    <text x="741.0" y="112" class="label">Clones</text>
+    <text x="741.0" y="158" class="value">0</text>
+    <text x="957.0" y="158" class="note" text-anchor="end">14 days</text></g><g class="tile" style="animation-delay:0.36s">
+    <rect x="25.0" y="200" width="300" height="110" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="47.0" y="244" font-size="28">📦</text>
+    <text x="91.0" y="242" class="label">APK downloads</text>
+    <text x="91.0" y="288" class="value">0</text>
+    <text x="307.0" y="288" class="note" text-anchor="end">all time</text></g><g class="tile" style="animation-delay:0.48s">
+    <rect x="350.0" y="200" width="300" height="110" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="372.0" y="244" font-size="28">⭐</text>
+    <text x="416.0" y="242" class="label">Stars</text>
+    <text x="416.0" y="288" class="value">0</text>
+    <text x="632.0" y="288" class="note" text-anchor="end">all repos</text></g><g class="tile" style="animation-delay:0.60s">
+    <rect x="675.0" y="200" width="300" height="110" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="697.0" y="244" font-size="28">🤝</text>
+    <text x="741.0" y="242" class="label">Followers</text>
+    <text x="741.0" y="288" class="value">0</text>
+    <text x="957.0" y="288" class="note" text-anchor="end">GitHub</text></g>
+  <text x="25.0" y="342" class="foot">tracking starts after the first daily run · updated 2026-10-29 12:26 UTC</text>
+</svg>

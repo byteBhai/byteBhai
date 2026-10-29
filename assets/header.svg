@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/><stop offset="0.55" stop-color="#7c3aed"/><stop offset="1" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#fde68a"/><stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .bob { animation: bob 3s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    .blink { transform-box: fill-box; transform-origin: center; animation: blink 4s infinite; }
+    @keyframes blink { 0%,44%,50%,100% { transform: scaleY(1); } 47% { transform: scaleY(0.1); } }
+    .tash { transform-box: fill-box; transform-origin: center; animation: tash 4s infinite; }
+    @keyframes tash { 0%,70%,100% { transform: rotate(0); } 74% { transform: rotate(-5deg); } 78% { transform: rotate(5deg); } 82% { transform: rotate(0); } }
+    .title { font: 900 76px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 2px; animation: rise .9s ease-out both; }
+    .sub { font: 600 20px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #e9d5ff; animation: rise .9s .3s ease-out both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+    .tag { font: 700 32px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; opacity: 0; animation: tag 12s infinite; }
+    @keyframes tag { 0% { opacity: 0; transform: translateY(14px); } 4%,21.0% { opacity: 1; transform: none; }
+                      25.0%,100% { opacity: 0; transform: translateY(-14px); } }
+    .float { font-family: Consolas, monospace; font-weight: 700; fill: #ffffff; opacity: .16; animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    .cursor { animation: cur 1s steps(1) infinite; }
+    @keyframes cur { 50% { opacity: 0; } }
+  </style>
+  <rect width="1000" height="280" rx="22" fill="url(#bg)"/>
+  <circle cx="165" cy="140" r="118" fill="#ffffff" opacity="0.08"/>
+  <text class="float" style="animation-delay:0s" x="880" y="70" font-size="34">{ }</text><text class="float" style="animation-delay:1.2s" x="930" y="200" font-size="28">&lt;/&gt;</text><text class="float" style="animation-delay:2.1s" x="820" y="250" font-size="30">#</text><text class="float" style="animation-delay:0.6s" x="760" y="60" font-size="26">()</text><text class="float" style="animation-delay:1.8s" x="960" y="120" font-size="34">;</text><text class="float" style="animation-delay:2.7s" x="700" y="255" font-size="26">[ ]</text>
+  
+  <g class="bob">
+    <g fill="#1e1b4b"><rect x="101.0" y="43.0" width="14" height="30" rx="5"/><rect x="101.0" y="207.0" width="14" height="30" rx="5"/><rect x="68.0" y="76.0" width="30" height="14" rx="5"/><rect x="232.0" y="76.0" width="30" height="14" rx="5"/><rect x="129.5" y="43.0" width="14" height="30" rx="5"/><rect x="129.5" y="207.0" width="14" height="30" rx="5"/><rect x="68.0" y="104.5" width="30" height="14" rx="5"/><rect x="232.0" y="104.5" width="30" height="14" rx="5"/><rect x="158.0" y="43.0" width="14" height="30" rx="5"/><rect x="158.0" y="207.0" width="14" height="30" rx="5"/><rect x="68.0" y="133.0" width="30" height="14" rx="5"/><rect x="232.0" y="133.0" width="30" height="14" rx="5"/><rect x="186.5" y="43.0" width="14" height="30" rx="5"/><rect x="186.5" y="207.0" width="14" height="30" rx="5"/><rect x="68.0" y="161.5" width="30" height="14" rx="5"/><rect x="232.0" y="161.5" width="30" height="14" rx="5"/><rect x="215.0" y="43.0" width="14" height="30" rx="5"/><rect x="215.0" y="207.0" width="14" height="30" rx="5"/><rect x="68.0" y="190.0" width="30" height="14" rx="5"/><rect x="232.0" y="190.0" width="30" height="14" rx="5"/></g>
+    <rect x="90.0" y="65.0" width="150" height="150" rx="24.0" fill="#facc15" stroke="#1e1b4b" stroke-width="9"/>
+    <rect x="104.0" y="79.0" width="122" height="45.0" rx="15.0" fill="#fff" opacity="0.18"/>
+    <circle cx="120.0" cy="95.0" r="8" fill="#3f3a4a"/>
+    <text x="165" y="107.0" text-anchor="middle" font-family="Consolas, monospace" font-weight="700" font-size="22" fill="#1e1b4b">&lt;/&gt;</text>
+    <g class="blink" fill="#1e1b4b">
+      <rect x="124.0" y="118" width="22" height="34" rx="11"/>
+      <rect x="184.0" y="118" width="22" height="34" rx="11"/>
+      <circle cx="138.0" cy="127" r="4.5" fill="#fff"/>
+      <circle cx="198.0" cy="127" r="4.5" fill="#fff"/>
+    </g>
+    <path class="tash" fill="#1e1b4b" d="M107 170 C125 148 153 150 165 160
+      C177 150 205 148 223 170 C195 162 177 166 165 168
+      C153 166 135 162 107 170 Z"/>
+    <path d="M139 186 Q165 202 191 186" stroke="#1e1b4b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <text class="title" x="326" y="118" fill="url(#name)">BYTE BHAI</text>
+  <text class="sub" x="330" y="156">Python · Android · Shorts in Hinglish</text>
+  <text class="tag" style="animation-delay:0s" x="330" y="205">5 line ka jaadu 🪄</text><text class="tag" style="animation-delay:3s" x="330" y="205">Python tricks, desi style 🐍</text><text class="tag" style="animation-delay:6s" x="330" y="205">Apps jo roz kaam aayein 📱</text><text class="tag" style="animation-delay:9s" x="330" y="205">Roz ek naya Short 🎬</text>
+  <rect class="cursor" x="330" y="222" width="46" height="5" rx="2" fill="#facc15"/>
+</svg>
